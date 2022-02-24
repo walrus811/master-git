@@ -8,7 +8,7 @@ _기초적인 사용법_
 
 _필수 코스_
 
-[git은 어떻게 동작하는가?]()
+[git은 어떻게 동작하는가?](https://github.com/walrus811/how-git-works)
 
 ---
 
@@ -20,31 +20,31 @@ _필수 코스_
 
 ## 1. 네 개의 영역
 
--   ### 1.1. git add는 무엇을 하는가
--   ### 1.2. Working Area / Index / Repository / Stash
--   ### 1.3. git add(Working Area -> Index)
--   ### 1.4. git commit(Index -> Repository)
--   ### 1.5. git checkout(Working Area <- Index && Working Area <- Repository)
--   ### 1.6. git reset(Repository -> Index || Repository -> Working Area)
--   ### 1.7. git rm/mv
--   ### 1.8. git switch/restore
--   ### 1.9. 정리
+- ### 1.1. git add는 무엇을 하는가
+- ### 1.2. Working Area / Index / Repository / Stash
+- ### 1.3. git add(Working Area -> Index)
+- ### 1.4. git commit(Index -> Repository)
+- ### 1.5. git checkout(Working Area <- Index && Working Area <- Repository)
+- ### 1.6. git reset(Repository -> Index || Repository -> Working Area)
+- ### 1.7. git rm/mv
+- ### 1.8. git switch/restore
+- ### 1.9. 정리
 <br/>
 
 ## 2. Stash
 
--   ### 2.1. 임시저장소
--   ### 2.2. git stash
--   ### 2.3. 정리
+- ### 2.1. 임시저장소
+- ### 2.2. git stash
+- ### 2.3. 정리
 
 <br/>
 
 ## 3. Revision Parameter
 
--   ### 3.1. HEAD의 두 단계 전 커밋의 두 번쨰 부모를 보고 싶어
--   ### 3.2. git blame
--   ### 3.3. git log
--   ### 3.4. 정리
+- ### 3.1. HEAD의 두 단계 전 커밋의 두 번쨰 부모를 보고 싶어
+- ### 3.2. git blame
+- ### 3.3. git log
+- ### 3.4. 정리
 
 <br/>
 
@@ -92,15 +92,15 @@ _필수 코스_
 
 <div style="text-indent :1rem">Working Area는 당신이 작업하는 디렉토리를 말한다. 사용자에겐 작업중인 중요한 공간이지만, git 저장소 입장에서는 일시적인 저장소에 불과하다.</div>
 
--   Index
+- Index
 
 <div style="text-indent :1rem">Index는 Working Area와 Repository 중간에 위치하는 저장소이다. git add 커맨드가 하는 동작이 바로 Working Area에서 Index로 파일을 복사 하는 것이다. 해당 영역을 통해 실제 저장소에 반영할 내용을 필터링 할 수 있다.</div>
 
--   Repository
+- Repository
 
 <div style="text-indent :1rem">Repository는 git 저장소를 의미한다. git commit 커맨드가 하는 동작이 바로 Index에서 Repository로 파일을 복사 하는 것이다. 해당 영역에는 커밋, 트리, blob 등 git 오브젝트가 존재하며 해당 오브젝트는 값을 변경할 수 없다. .git 폴더 자체가 해당 영역을 의미한다.</div>
 
--   Stash
+- Stash
 
 <div style="text-indent :1rem">git의 임시 저장소이며, git stash로 다룰 수 있다. Stash는 위 세가지 영역과 다른 성격을 띄므로 여기가 아닌 별도의 챕터에서 설명할 것이다.</div>
 
@@ -249,7 +249,7 @@ awesome_mix.txt
 <div style="text-indent :1rem">개인적으로 git에서 가장 유용한 커맨드가 아닌가 싶다. 앞서 소개한 checkout이 브랜치/커밋 이동과 동시에 Repository의 내용으로 Index/Working Area를 덮어씌운다면, reset은 선별적으로 Repository의 내용을 덮어씌울 수 있다. 혹은 데이터 복사 없이 HEAD만 이동할 수도 있다. git reset은 다음 두 연속동작으로 이루어져있다.</div>
 <br/>
 
-> -   git reset 동작순서
+> - git reset 동작순서
 
 1. HEAD를 지정한 커밋으로 이동
 2. 데이터 복사
