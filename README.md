@@ -204,7 +204,7 @@ $git diff # Index - Working Area 비교
 
 <div style="text-indent :1rem">중요한 건 지금부터다. 워크플로우의 순방향으로 이어지는 add와 commit은 동작에 대해 딱히 잘 알지 못 하더라도 어느정도 사용할 수 있다. 하지만, 그 역에 대해서 사람들은 몹시 곤란해한다. 도입에서 말한 것처럼, 무언가 잘못되어 저장소를 지우고 다시 clone을 하거나 새로 만든 적이 있지는 않은가? 본문의 내용의 중점이 바로 그 해결책에 있다. 여기서 다룰 git checkout은 그 시발점이다.</div>
 
-<div style="text-indent :1rem">이제껏 git checkout을 브랜치를 변경할 때 사용했지만, 사실, git checkout의 man 페이지를 보면 "브랜치를 변경하거나, 워킹 트리 파일을 복구(Switch branches or restore working tree files)한다."라고 적혀있다. 파일을 복구할 때도 쓰인다는 의미다. 여기서 워킹 트리는 Working Area를 의미한다. 사실 git은 리누스가 개인 필요로 만든 프로그램이라 커맨드들이 그다지 직관적이지 않다. 요즘에는 git이 대중적으로 알려지고 오픈소스 개발 커뮤니티도 거대해졌기에 이를 보완하는 직관적인 커맨드들이 많이 추가되었다. 이런 커맨드들도 곧 다룰 것이다.</div>
+<div style="text-indent :1rem">이제껏 git checkout을 브랜치를 변경할 때 사용했지만, 사실, git checkout의 man 페이지를 보면 "브랜치를 변경하거나, 워킹 트리 파일을 복구(Switch branches or restore working tree files)한다."라고 적혀있다. 파일을 복구할 때도 쓰인다는 의미다. 여기서 워킹 트리는 Working Area를 의미한다. 그다지 직관적이지 않다. 요즘에는 git이 대중적으로 알려지고 오픈소스 개발 커뮤니티도 거대해졌기에 이를 보완하는 직관적인 커맨드들이 많이 추가되었다. 이런 커맨드들도 곧 다룰 것이다.</div>
 
 <div style="text-indent :1rem">git checkout으로 Index에서 Working Area로 파일을 복구하는 건 이미 봤으니 이제는 브랜치를 이동하면서 어떤 일이 벌어지는지 좀더 자세하게 알아보자.</div>
 
